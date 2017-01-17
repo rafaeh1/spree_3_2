@@ -1,0 +1,7 @@
+<% if widget.products.any? %>
+  <%= render partial: 'spree/shared/products', locals: { products: widget.products } %>
+<% else %>
+  <p>
+    No products selected. Edit widget properties to select products to display here.
+  </p>
+<% end %>

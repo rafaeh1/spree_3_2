@@ -1,0 +1,7 @@
+<%= scrivito_large_dialog do %>
+  <%= scrivito_details_for SpreeProductsWidget.description_for_editor do %>
+    <%= scrivito_details_for "Products" do %>
+      <%= scrivito_tag :div, widget, :product_ids, {data: {solidus_api_key: current_spree_user.spree_api_key}} %>
+    <% end %>
+  <% end %>
+<% end %>
